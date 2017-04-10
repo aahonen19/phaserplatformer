@@ -94,7 +94,7 @@ export default class GameState extends Phaser.State {
     this.coins = this.game.add.group();
     this.spiders = this.game.add.group();
     this.enemyWalls = this.game.add.group();
-    //this.enemyWalls.visible = false;
+    this.enemyWalls.visible = false;
 
       // spawn all platforms
       data.platforms.forEach(this._spawnPlatform, this);
